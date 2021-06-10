@@ -1,0 +1,414 @@
+* {
+    list-style: none;
+    text-decoration: none!important;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{font-family: 'gotham-medium', sans-serif;}
+.my-navbar{
+    background: transparent!important;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+header .nav-items{padding: 0 0 0 25px;}
+header .nav-links{color: white; font-weight: bold; font-size: 17px;}
+.nav-links:hover{color: rgba(0,255,0,1);}
+header img{border-radius: 50%;}
+/*HEADER ENDS*/
+.container{width: 1150px;}
+/*HELLO SECTION*/
+/*.hello-section{
+	background-image: url(../images/section1bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	position: relative;
+}*/
+.hello-sec-particle-div{
+	z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+.hello-wrapper{padding: 120px 0 40px 0;}
+.hello-para{font-size: 46px; font-family: gotham, sans-serif; font-weight: 100; line-height: 1;}
+.ahmad-para{font-family: arial, sans-serif; font-size: 63px; font-weight: 800; line-height: 1; animation: ahmad-animation 2s;}
+.frontend-para{font-family: gotham, sans-serif; font-size: 30px; letter-spacing: 10px; line-height: 4;}
+.social-icons i{color: greenyellow; font-size: 50px; padding: 0 10px 0 10px; margin: 32px 0;}
+.hire-btn{background-color: #dbc740; color: black; font-weight: 500; border:none; /*margin: 30px 0 90px 0;*/ padding: 10px 30px; }
+.hire-btn a{color: black;}
+.swipe{width: 30px; height: 60px; background-color: transparent; border:3px solid white; border-radius: 30px; margin-right: auto; margin-left: auto; margin-top: 20px; position: absolute; bottom: 30; left: 0; right: 0;}
+.swipe-circle{width: 20px; height: 20px; background-color: white; border-radius: 50%; margin: 3px 2px; animation: swipe-animation 2s; animation-iteration-count: infinite;}
+.swipe-text{font-weight: bold; font-size: 30px; animation: swipe-text-animation 1s; animation-iteration-count:20;}
+.hello-sec-icons:hover{color: black;}
+
+@keyframes swipe-animation{
+    from{margin: 3px 2px;}
+    50% {margin: 30px 2px;}
+    to{margin: 3px 2px;}
+}
+@keyframes ahmad-animation{
+    from{opacity: 0; margin-right: 900px;}
+    90%{opacity: 0.3;}
+    to{opacity: 1; margin-right: 0px;}
+}
+@keyframes swipe-text-animation{
+    from{font-size: 30px;}
+    50%{font-size: 35px;}
+    to{font-size: 30px;}
+}
+
+
+/*FEATURED SECTION*/
+.featured-section{background-color: white;}
+.featured-section-wrapper{margin: 60px 0 60px 0!important;}
+.featured-circle{position: absolute; z-index: -1; left: 0; top: 0;}
+.featured-project{color: #48007f; font-size: 25px; font-weight: 700; font-family: gotham, sans-serif; letter-spacing: 10px;}
+.massachusetts-gif{width: 100%; border: 2px solid black; border-radius: 10px;}
+.watch-gif-text{font-size: 40px; font-weight: bold; font-family: Roboto, sans-serif; height: 80px;}
+.wait-text{animation: wait-text-animation 2s; animation-iteration-count: 30;}
+.EF-gif{width: 100%; border: 2px solid black; border-radius: 10px;}
+
+@keyframes wait-text-animation{
+    from{opacity: 0; font-size: 40px;}
+    50%{font-size: 50px; opacity: 1;}
+    to{opacity: 0; font-size: 40px;}
+}
+
+/*CUSTOM SECTION*/
+.custom-section{background-image: url(../images/bg347height.jpg); background-size: cover; color: black; font-family: gotham, sans-serif; padding: 40px 0;}
+.this{font-size: 25px; font-weight: bold; letter-spacing: 15px; }
+.custom{font-family: chiller, sans-serif; font-size: 60px;}
+.javascript{font-size: 60px; font-weight: bolder;}
+
+/*BEFORE SKILLS*/
+.before-skills-section{background-image: url(../images/bg220height.jpg); background-size: cover; color: black; font-size: 66px; font-weight: bolder; font-family: Roboto, sans-serif; padding: 20px 0;}
+
+/*SKILLS SECTION*/
+.skills-section{background-image: url(../images/skills-sec-bg.jpg); background-size: cover; padding: 50px 0;}
+.polygon-shape{animation: polygon-animation 9s infinite linear; position: absolute;
+    opacity: 0.5;
+    right: 180px;
+    top: 250px;}
+
+@keyframes polygon-animation{
+    /*50%{transform: rotate(360deg);}*/
+    100%{transform: rotate(360deg);}
+}
+            /**/
+            /**/
+            /**/
+            /**/
+            /**/
+            /**/
+            /**/
+            /*TIMELINE CSS START*/
+            /**/
+            /**/
+            /**/
+            /**/
+            /**/
+            /**/
+            /* The actual timeline (the vertical ruler) */
+    .timeline {position: relative;   max-width: 950px;margin: 0 auto;}
+
+    /* The actual timeline (the vertical ruler) */
+    .timeline::after {content: ''; position: absolute; width: 6px; background-color: #dbc740; bottom: 0; top: 0; left: 50%;margin-left: -3px;}
+    /* Container around content */
+    .container-timeline {padding: 10px 40px;position: relative;background-color: inherit;width: 50%;}
+
+    /* The circles on the timeline */
+    .container-timeline::after {content: '';position: absolute;width: 30px;height: 30px;right: -15px;background-color: #dbc740;top: 17px;border-radius: 50%;z-index: 1;}
+
+    /* Place the container to the left */
+    .left {left: 0;}
+
+    /* Place the container to the right */
+    .right {left: 50%;}
+
+    /* Add arrows to the left container (pointing right) */
+    
+    /* Add arrows to the right container (pointing left) */
+    
+    /* Fix the circle for containers on the right side */
+    .right::after {left: -15px;}
+
+    /* The actual content */
+    .timeline-content{color: #dbc740; letter-spacing: 5px; font-weight: 800; text-align: justify;}
+    /* Media queries - Responsive timeline on screens less than 600px wide */
+    @media screen and (max-width: 600px) {
+
+        /* Place the timelime to the left */
+        .timeline::after {
+            left: 31px;
+        }
+
+        /* Full-width containers */
+        .container-timeline {width: 100%;padding-left: 70px;padding-right: 25px;}
+
+        /* Make sure that all arrows are pointing leftwards */
+        .container::before {left: 60px;border: medium solid white;border-width: 10px 10px 10px 0;border-color: transparent white transparent transparent;}
+
+        /* Make sure all circles are at the same spot */
+        .left::after,
+        .right::after {
+            left: 15px;
+        }
+
+        /* Make all right containers behave like the left ones */
+        .right {left: 0%;}
+    }
+            /**/
+            /**/
+            /**/
+            /**/
+            /**/
+            /*TIMELINE CSS ENDS*/
+            /**/
+            /**/
+            /**/
+            /**/
+            /**/
+
+
+.skills-percent{color: #dbc740; font-size: 25px; font-family: gotham, sans-serif;}
+.skills-percent-container{margin: 60px 0; font-size: 25px; color: #dbc740;}
+.html-percent{width: 450px; height: 20px; background-color: #dbc740; border-radius: 10px;}
+.css-percent{width: 400px; height: 20px; background-color: #dbc740; border-radius: 10px;}
+.js-percent{width: 200px; height: 20px; background-color: #dbc740; border-radius: 10px;}
+.wordpress-percent{width: 400px; height: 20px; background-color: #dbc740; border-radius: 10px;}
+.seo-percent{width: 250px; height: 20px; background-color: #dbc740; border-radius: 10px;}
+.line-height-percent{line-height: 1;}
+.margin-right-and-height{margin-right: 130px; height: 200px;}
+.column-flex{ flex: 0 0 0%;}
+
+
+/**/
+.before-contact{background-image: url(../images/bg220height.jpg); background-size: cover; font-size: 63px; font-weight: 900; font-family: gotham, sans-serif; padding: 40px 0;}
+
+/*CONTACT SECTION*/
+.contact-wrapper{padding: 30px 0 130px 0;}
+.contact-section{background-image: url(../images/contact-sec-bg.jpg); background-size: cover; font-family: gotham, sans-serif;}
+.contact-section .discuss{font-size: 70px; font-weight: 900; padding: 0px 0 100px 0;}
+.contact-me-text{font-size: 60px;}
+.in-order-para{font-size: 25px; font-family: roboto, sans-serif;}
+.email-para{color: black; font-size: 25px;}
+.email-para:hover{color: blue;}
+.hire-btn-contact{padding: 20px 220px; border-radius: 40px; font-size: 25px;}
+.contact-sec-icons{color: blue!important;}
+.contact-sec-icons:hover{color: black!important;}
+.social-icons-contact-div{margin: 0!important;height: 85px;}
+
+/*TESTIMONIAL SECTION*/
+.testimonial-section{background-image: url(../images/testimonial-sec-bg.jpg); background-size: cover;}
+.testimonial-wrapper{padding: 10px 0 110px 0;}
+.testimonial-div{background-color: rgba(255,255,255,0.6); font-size: 20px; font-family: gotham, sans-serif; width: 400px; height: 215px; border: 5px solid black; border-radius: 30px;}
+.review-img{border-radius: 50%; bottom: -44px; left: calc(55% - 60px);}
+.name-and-rating{position: absolute;bottom: -120px;left: calc(50% - 65px);}
+
+/*PROJECTS CAROUSEL SECTION*/
+.carousel-inner-right-css{color: black;font-weight: bold;font-family: gotham, sans-serif;}
+.carousel-inner-right-css p{line-height: 1;margin: 0;}
+.control-btn-my-css{color: black;background-color: black;width: 100px;height: 50px;margin: auto; opacity: 0.3;}
+.carousel-indicators-my-css{background-color: black!important;height: 30px!important;border-radius: 50%!important;opacity: 0.3!important;}
+.carousel-indicators-my-css:hover{background-color: #2208ff!important;opacity: 1!important;}
+.carousel-inner-margin{margin: 80px 0;}
+.featured-circle-project-section{left: initial!important; right: -70px!important; top: -60px!important;}
+
+/*FOOTER SECTION*/
+.footer-section{padding: 30px 0; color: white; background-color: black;}
+/**/
+/**/
+.btn-top{width: 50px; height: 50px; background-color: #adff2f; border-radius: 50%; position: fixed; bottom: 0; right: 0; margin:0 20px 20px 0; cursor: pointer; z-index: 5; font-size: 30px; display: flex; align-items: center;justify-content: center; color: black;}
+
+
+/**/
+/**/
+/**/
+/*MEDIA QUESRIES*/
+/**/
+/**/
+/**/
+@media screen and (max-width: 1215px) and (min-width: 1025px) {
+    .hello-wrapper {padding: 85px 0 40px 0;}
+    .hire-btn-contact{padding: 10px 175px;}
+    .hello-para{font-size: 40px!important;}
+    .ahmad-para{font-size: 60px!important;}
+    .frontend-para{font-size: 25px!important; line-height: 3;}
+    .hello-sec-icons{margin: 0px!important;}
+    .hire-btn-hello{margin-top: 10px!important;}
+}
+
+@media screen and (max-width: 425px) {
+    #particles-js{padding: 80px 0;}
+    .navbar-my-img{width: 40px;height: 50px;}
+    .hello-wrapper{padding: 25px 0 0 0;}
+    .hello-para{ font-size: 20px;}
+    .frontend-para{font-size: 15px;margin-top: 10px;line-height: 1;}
+    .ahmad-para{font-size: 25px;}
+    .hello-sec-icons{font-size: 30px!important;margin: 0!important;}
+    .social-icons-hello{margin-top: 20px!important;}
+    .hire-btn{padding: 5px 30px; margin-top: 20px;}
+    .swipe-text{font-size: 15px!important;}
+    .swipe{width: 20px!important;height: 50px;}
+    .swipe-circle{width: 10px;height: 10px;}
+    /**/
+    .html-project-col-1, .html-project-col-2{width: 100%;}
+    .wp-project-col-1, .wp-project-col-2{width: 100%;}
+    #featured-projects .container{width: 100%;}
+    #featured-projects .featured-project{font-size: 18px;letter-spacing: 8px;}
+    #featured-projects .featured-project-detail{letter-spacing: 0px!important; font-size: 15px!important; font-weight: 400!important;}
+    .watch-gif-text{font-size: 20px!important; height: 30px;}
+    @keyframes wait-text-animation-mobile{from{font-size: 10px; opacity: 0;} 50%{opacity: 1; font-size: 20px;} to{font-size: 10px; opacity: 0;}}
+    .wait-text{animation: wait-text-animation-mobile 2s 30;}
+    /**/
+    .this{font-size: 19px; letter-spacing: 9px;}
+    .thumb >img{width: 35px;}
+    /**/
+    .carousel-item{padding: 0 10px;}
+    .control-btn-my-css{width: 35px;border-radius: 50%;height: 35px; opacity: 0.2;}
+    .carousel-my-col-width{width: 100%;}
+    .carousel-my-col-width > img{height: 300px;}
+    .fs-50{font-size: 50px!important;} .fs-20{font-size: 20px!important;} .fs-15{font-size: 15px!important;} .fs-13{font-size: 13px!important;}
+    /**/
+    .polygon-shape{opacity: 0.1;}
+    .margin-right-and-height{margin: 0px;}
+    .w-100-mobile{width: 100%;}
+    .flex-basis-mobile{flex-basis: 30%;}
+    /**/
+    #testimonial .container{width: 100%;}
+    .fs-30{font-size: 30px!important;}
+    .testimonial-wrapper{padding: 0px 10px;}
+    .testimonial-div{margin-bottom: 160px;}
+    .review-img{bottom: -60px;}
+    /**/
+    .before-contact{padding: 40px 10px;}
+    /**/
+    #contact-me .container{width: 100%; padding: 30px 10px 130px 10px;}
+    .discuss{padding:0 0 50px 0!important;}
+    .fs-40{font-size: 40px!important;}
+    .fs-11{font-size: 11px!important;}
+}
+
+@media screen and (max-width: 989px) and (min-width: 400px) {
+    #particles-js{padding: 80px 0;}
+    .navbar-my-img{width: 40px;height: 50px;}
+    .hello-wrapper{padding: 25px 0 0 0;}
+    .hello-para{ font-size: 20px;}
+    .frontend-para{font-size: 15px;margin-top: 10px;line-height: 1;}
+    .ahmad-para{font-size: 25px;}
+    .hello-sec-icons{font-size: 30px!important;margin: 0!important;}
+    .social-icons-hello{margin-top: 20px!important;}
+    .hire-btn{padding: 5px 30px; margin-top: 20px;}
+    .swipe-text{font-size: 15px!important;}
+    .swipe{width: 20px!important;height: 50px;}
+    .swipe-circle{width: 10px;height: 10px;}
+    /**/
+    .html-project-col-1, .html-project-col-2{width: 100%;}
+    .wp-project-col-1, .wp-project-col-2{width: 100%;}
+    #featured-projects .container{width: 100%;}
+    #featured-projects .featured-project{font-size: 18px;letter-spacing: 8px;}
+    #featured-projects .featured-project-detail{letter-spacing: 0px!important; font-size: 15px!important; font-weight: 400!important;}
+    .watch-gif-text{font-size: 20px!important; height: 30px;}
+    @keyframes wait-text-animation-mobile{from{font-size: 10px; opacity: 0;} 50%{opacity: 1; font-size: 20px;} to{font-size: 10px; opacity: 0;}}
+    .wait-text{animation: wait-text-animation-mobile 2s 30;}
+    /**/
+    .this{font-size: 19px; letter-spacing: 9px;}
+    .thumb >img{width: 35px;}
+    /**/
+    .carousel-item{padding: 0 10px;}
+    .control-btn-my-css{width: 35px;border-radius: 50%;height: 35px; opacity: 0.2;}
+    .carousel-my-col-width{width: 100%;}
+    .carousel-my-col-width > img{height: 300px;}
+    .fs-50{font-size: 50px!important;} .fs-20{font-size: 20px!important;} .fs-15{font-size: 15px!important;} .fs-13{font-size: 13px!important;}
+    /**/
+    .polygon-shape{opacity: 0.1;}
+    .margin-right-and-height{margin: 0px;}
+    .w-100-mobile{width: 100%;}
+    .flex-basis-mobile{flex-basis: 30%;}
+    /**/
+    #testimonial .container{width: 100%;}
+    .fs-30{font-size: 30px!important;}
+    .testimonial-wrapper{padding: 0px 10px;}
+    .testimonial-div{margin-bottom: 160px;}
+    .review-img{bottom: -60px;}
+    /**/
+    .before-contact{padding: 40px 10px;}
+    /**/
+    #contact-me .container{width: 100%; padding: 30px 10px 130px 10px;}
+    .discuss{padding:0 0 50px 0!important;}
+    .fs-40{font-size: 40px!important;}
+    .fs-11{font-size: 11px!important;}
+}
+@media screen and (max-width: 425px) {
+    .btn-top{width: 30px; height: 30px; font-size: 15px;}
+}
+@media screen and (max-width: 375px) {
+    .contact-wrapper{padding: 30px 10px 80px 10px!important;}
+}
+@media screen and (max-width: 295px) {
+    .hire-btn{margin: 0px;padding: 2px 6px;}
+    .testimonial-div{height: 230px;}
+}
+@media screen and (max-width: 991px) and (min-width: 400px) {
+    .nav-links{font-size: 13px!important;}
+    .nav-items{padding: 0 0 0 20px!important;}
+    /**/
+    .hello-wrapper {padding: 100px 0 0 0;}
+    .fs-65-768{font-size: 65px!important;}
+    .fs-50-768{font-size: 50px!important;}
+    .fs-40-768{font-size: 40px!important;}
+    .fs-30-768{font-size: 30px!important;}
+    .fs-25-768{font-size: 25px!important;}
+    .fs-20-768{font-size: 20px!important;}
+    .fs-17-768{font-size: 17px!important;}
+    .fs-15-768{font-size: 15px!important;}
+    .fs-10-768{font-size: 10px!important;}
+    .frontend-para{margin-top: 50px!important;}
+    .hire-btn{padding: 10px 35px;}
+    /**/
+}
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+    .hello-wrapper{padding: 70px 0 40px 0;}
+    .frontend-para{line-height: 1;margin-top: 30px;}
+    .hello-sec-icons{margin: 10px 0!important;}
+    .hire-btn{margin-top: 15px;}
+    .skill-percent-center-col-1024{width: 100%!important;}
+    .hire-btn-contact{padding: 10px 0!important;}
+}
+@media screen and (max-width: 991px) and (min-width: 990px) {
+    .hello-wrapper{padding: 80px 0 0 0;}
+    .html-project-col-1{width: 100%;}
+    .html-project-col-2{width: 100%;}
+    .wp-project-col-1{width: 100%;}
+    .wp-project-col-2{width: 100%;}
+    .frontend-para{margin-top: 10px!important; font-size: 25px!important; line-height: 1;}
+    .ahmad-para{font-size: 60px!important;}
+    .hello-sec-icons{margin: 10px!important; font-size: 35px!important;}
+    .hire-btn {padding: 7px 25px!important; margin-top: 20px!important;}
+    .testimonial-row-my{justify-content: space-evenly!important;height: 800px;}
+}
+/*@media screen and (max-width: 992px) and (min-width: 781px) {
+
+}*/
+@media screen and (max-width: 520px) and (min-width: 400px) {
+    .hello-wrapper {padding: 55px 0 0 0!important;}
+    .hello-para{font-size: 20px!important;}
+    .ahmad-para{font-size: 35px!important;}
+    .frontend-para{margin-top: 20px!important;font-size: 13px!important;}
+    .hello-sec-icons{font-size: 20px!important;}
+    .hire-btn{padding: 3px 20px!important;font-size: 12px!important;}
+}
+@media screen and (max-width: 735px) and (min-width: 521px) {
+    .hello-wrapper {padding: 60px 0 0 0!important;}
+    .hello-para{font-size: 25px!important;}
+    .ahmad-para{font-size: 40px!important;}
+    .frontend-para{font-size: 20px!important;}
+    .hello-sec-icons{font-size: 25px!important;}
+    .hire-btn {padding: 5px 20px!important; font-size: 13px!important;}
+}
