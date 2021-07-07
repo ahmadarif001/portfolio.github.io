@@ -90,7 +90,8 @@ header img{border-radius: 50%;}
 .before-skills-section{background-image: url(../images/bg220height.jpg); background-size: cover; color: black; font-size: 66px; font-weight: bolder; font-family: Roboto, sans-serif; padding: 20px 0;}
 
 /*SKILLS SECTION*/
-.skills-section{background-image: url(../images/skills-sec-bg.jpg); background-size: cover; padding: 50px 0;}
+.skills-section{background-image: url(../images/skills-sec-bg.jpg); background-size: cover; padding: 50px 0; background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;}
 .polygon-shape{animation: polygon-animation 9s infinite linear; position: absolute;
     opacity: 0.5;
     right: 180px;
@@ -118,7 +119,7 @@ header img{border-radius: 50%;}
     .timeline {position: relative;   max-width: 950px;margin: 0 auto;}
 
     /* The actual timeline (the vertical ruler) */
-    .timeline::after {content: ''; position: absolute; width: 6px; background-color: #dbc740; bottom: 0; top: 0; left: 50%;margin-left: -3px;}
+    .timeline::after {content: ''; position: absolute; width: 6px; background-color: #dbc740; bottom: 0; top: 20px; left: 50%;margin-left: -3px;}
     /* Container around content */
     .container-timeline {padding: 10px 40px;position: relative;background-color: inherit;width: 50%;}
 
