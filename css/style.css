@@ -87,7 +87,9 @@ header img{border-radius: 50%;}
 .javascript{font-size: 60px; font-weight: bolder;}
 
 /*BEFORE SKILLS*/
-.before-skills-section{background-image: url(../images/bg220height.jpg); background-size: cover; color: black; font-size: 66px; font-weight: bolder; font-family: Roboto, sans-serif; padding: 20px 0;}
+.before-skills-section{background-image: url(../images/bg220height.jpg); background-size: cover; color: black; font-size: 66px; font-weight: bolder; font-family: Roboto, sans-serif; padding: 20px 0; width: 55%;
+    margin: 0 auto;
+    border-radius: 0% 100px 0% 100px;}
 
 /*SKILLS SECTION*/
 .skills-section{background-image: url(../images/skills-sec-bg.jpg); background-size: cover; padding: 50px 0; background-color: rgba(0,0,0,0.5);
@@ -140,7 +142,7 @@ header img{border-radius: 50%;}
     .right::after {left: -15px;}
 
     /* The actual content */
-    .timeline-content{color: #dbc740; letter-spacing: 5px; font-weight: 800; text-align: justify;}
+    .timeline-content{color: #dbc740; letter-spacing: 1.5px; font-weight: 800; text-align: justify; line-height: 1.5;}
     /* Media queries - Responsive timeline on screens less than 600px wide */
     @media screen and (max-width: 600px) {
 
